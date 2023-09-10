@@ -65,6 +65,32 @@
             <li><a href="https://www.linkedin.com/in/raul-guliyev-3a3670110" target="_blank">Linkedin</a></li>
         </ul>
     </section>
+
+    <section id="leave_message">
+        <h2>Leave a Message</h2>
+        <form name="leave_message" method="post" autocomplete="on">
+            <label for="userName">User name</label>
+            <input type="text" id="userName" name="userName" required="true">
+            <br>
+            <label for="userEmail">User email</label>
+            <input type="email" id="userEmail" name="userEmail" required="true">
+            <br>
+            <label for="userMessage">Message</label>
+            <br>
+            <textarea name="userMessage" required="true" id="userMessage"  cols="30" rows="10"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!--message list section-->
+    <section id="messages" style="display: none;">
+        <h2>Messages</h2>
+        <ul>
+
+        </ul>
+    </section>
+
     <footer></footer>
     <script src="js/index.js"></script>
 
