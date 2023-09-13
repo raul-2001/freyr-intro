@@ -5,7 +5,7 @@ const thisYear = today.getFullYear();
 // adding some elements into the footer tag
 const footer = document.querySelector("footer");
 const copyright = document.createElement("p");
-copyright.innerHTML =  `Raul Guliyev ${thisYear}`;
+copyright.textContent =  `© Raul Guliyev ${thisYear}`;
 footer.appendChild(copyright);
 
 
@@ -13,8 +13,11 @@ footer.appendChild(copyright);
 skills = ['javaScript', 'HTML', 'CSS', 'Python', 'SQL', 'GIT', 'Django', 'DRF', 'FastAPI', 'Docker'];
 const skillsSection = document.querySelector("#skills");
 const skillList = skillsSection.querySelector("ul");
+skillList.classList.add("skills__list");
+
 for(let i=0; i < skills.length; i++) {
     const skill = document.createElement("li");
+    skill.classList.add("skill_role");
     skill.textContent = skills[i];
     skillList.appendChild(skill);
 }
@@ -45,6 +48,7 @@ meessageFrom.addEventListener('submit', event =>{
     const messageSection = document.querySelector('#messages');
     const messageList = messageSection.querySelector("ul");
     const newMessage = document.createElement("li");
+    newMessage.classList.add('list__item');
     newMessage.innerHTML = `<div>
     <span>${usersMessage}</span>
     <p>${now_date.toLocaleString()} from <a class"link" href="mailto:${userEmail}">${userName}</a> &nbsp;</p>
@@ -87,6 +91,8 @@ meessageFrom.addEventListener('submit', event =>{
     // create remove button
     const removeButton = document.createElement("button");
     removeButton.innerText = "remove";
+    removeButton.style.backgroundColor = 'red';
+    removeButton.style.marginLeft = '5px';
     removeButton.type = "button";
     removeButton.addEventListener('click', e => {
         const entry = e.target.parentNode;

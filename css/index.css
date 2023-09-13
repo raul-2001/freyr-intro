@@ -1,0 +1,183 @@
+:root {
+    --color-lightest: #fff;
+    --color-darker: #2b2b4a;
+    --color-primary: #0072e0;
+}
+
+body {
+    background-color: var(--color-lightest);
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: var(--color-darker);
+}
+
+main {
+    flex-grow: 1;
+}
+
+section {
+    margin: 5px;
+    padding: 5px;    
+}
+
+h1, h2 {
+    font-size: 27px;
+    font: bold;
+    font-weight: 600;
+    color: rgb(107, 116, 204);
+}
+
+ul {
+    padding: 0;
+}
+
+.about_list {
+    display: block;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+.experience__list {
+    display: block;
+    list-style: none;
+}
+
+.experience__item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.experience__item {
+    padding: 10px;
+    background-color: rgb(240, 229, 229);
+}
+
+
+.skills__list {
+    list-style: none;
+}
+
+.skill_role {
+    margin-right: 0.5rem;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+label {
+    color: black;
+    font: bold;
+}
+
+input[type="text"]{
+    height: 1.5rem;
+    margin: 5px 0;
+    display: block;
+}
+
+input[type="email"] {
+    height: 1.5rem;
+    margin: 5px 0;
+    display: block;
+}
+
+textarea {
+    width: 844px;
+    height: 60px;
+    box-sizing: border-box;
+    margin: 5x 0;
+}
+
+button {
+    font: 1.25em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    padding: 0.75rem 1.25rem;
+    background-color: #0072e0;
+    color: white;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list__item {
+    align-items: center;
+    display: flex;
+}
+
+input::placeholder,
+textarea::placeholder {
+    padding: 5px;
+    color: hsl(213, 73%, 50%);
+}
+
+.field__item:not(:last-child) {
+    margin-right: 5px;
+}
+
+.field__item {
+    display: inline;
+}
+
+
+
+.container_userName__email {
+    display: block;
+}
+
+
+
+.field_label {
+    margin-bottom: 0.25rem;
+    padding: 5px;
+}
+
+.field_input {
+    padding: 0.25rem 0.5rem;
+    width: 200px;
+}
+
+.field_text {
+    margin-top: 5px;
+    width: auto;
+    
+}
+
+footer {
+    background-color: rgb(241, 232, 232);
+    text-align: center;
+    
+}
+
+
+@media screen and (min-width: 667px) {
+
+    .container_userName__email {
+        display: flex;
+    }
+
+    .skills__list {
+        display: flex;
+    }
+
+    .field_input {
+        padding: 0.25rem 0.5rem;
+        width: 400px;
+    }
+
+
+    .field_text {
+        margin-top: 5px;
+        width: 845px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
