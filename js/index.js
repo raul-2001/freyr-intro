@@ -17,7 +17,7 @@ skillList.classList.add("skills__list");
 
 for(let i=0; i < skills.length; i++) {
     const skill = document.createElement("li");
-    skill.classList.add("skill_role");
+    skill.classList.add("item_role");
     skill.textContent = skills[i];
     skillList.appendChild(skill);
 }
@@ -112,4 +112,36 @@ meessageFrom.addEventListener('submit', event =>{
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
     
+})
+
+// AJAX
+// XPMLHttpRequest that is callback-based API
+const githubRequest = new XMLHttpRequest;
+githubRequest.open('GET', 'https://api.github.com/users/raul-2001/repos');
+githubRequest.send();
+githubRequest.addEventListener("load", e => {
+    const myData = JSON.parse(githubRequest.responseText);
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < myData.length; i++) {
+        
+        const project = document.createElement("li");
+        const a = document.createElement("a");
+
+        // adding class and css styles
+        project.classList.add('item_role');
+        
+        if (myData[i].name !== "fenrir-intro") {
+
+            a.innerText = myData[i].name;
+            a.href = myData[i].clone_url;
+            a.target = "_blank"
+            project.appendChild(a);
+            projectList.appendChild(project);
+    
+        }
+            }
+
 })
