@@ -7,147 +7,123 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <nav>
-        <!--<img src="/media/jpg/rauls_photo" alt="Raul Gulieyev">-->
-        <h1>Raul Guliyev</h1>
-        <ul class="about_list">
-            <li>About</li>
-            <li>Experience</li>
-            <li>Connect</li>
-        </ul>
-    </nav>
-
-
-    <main>
-        <section>
-            <h1>About</h1>
-            <p>Hey! I'm Raul and I'm multi-disciplined software engineer with experience full-stack development and ERP development. Continuous process improver. Empathetic leader. Focused on crafting a web for everyone.
-            The web can sometimes be indistinguishable from magic, but I have the knowledge and patience required to make just about anything.</p>
-        </section>
-
-    <h1>Rau Guliyev</h1>
-
-
-      <section>
-          <h1>About</h1>
-          <p>Hey! I'm Raul and I'm multi-disciplined software engineer with experience full-stack development and ERP development. Continuous process improver. Empathetic leader. Focused on crafting a web for everyone.
-          The web can sometimes be indistinguishable from magic, but I have the knowledge and patience required to make just about anything.</p>
-      </section>
-
-      <section>
-          <ul>
-          <h1>Experience</h1>
-              <li>
-                  <span>
-                      <strong>Software Development Engineer </strong>
-                      - FCHAIN CORPORATION CO.
-                      <span> 2022 - present</span>
-                  </span>
-              </li>
-              <li>
-                  <span>
-                      <strong>Development Engineer</strong>
-                      - PROSOL CJSC
-                      <span>May 2019 - June 2022</span>
-                  </span>
-              </li>
-              <li>    
-                  <span>
-                      <strong>ERP System Software development engineer</strong>
-                      - Media Invest LLC
-                      <span>Novomber 2016 - January 2019</span>
-                  </span>
-              </li>
-          </ul>
-      </section>
-      <section id="skills">
-          <h2>Skills</h2>
-              <ul>
-
-
-      <section id="experience">
-          <h1>Experience</h1>
-          <ul class="experience__list">
-              <li class="experience__item">
-                  <span>
-                      <strong>Software Development Engineer </strong>
-                      - FCHAIN CORPORATION CO.
-                      <span> 2022 - present</span>
-                  </span>
-              </li>
-              <li class="experience__item">
-                  <span>
-                      <strong>Development Engineer</strong>
-                      - PROSOL CJSC
-                      <span>May 2019 - June 2022</span>
-                  </span>
-              </li>
-              <li class="experience__item">    
-                  <span>
-                      <strong>ERP System Software development engineer</strong>
-                      - Media Invest LLC
-                      <span>Novomber 2016 - January 2019</span>
-                  </span>
-              </li>
-          </ul>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-                <ul class="skills__list">
-        </section>
-        <section>
-            <h1>Connect</h1>
-            <ul>
-                <li><a href="https://github.com/raul-2001/" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/raul-guliyev-3a3670110" target="_blank">Linkedin</a></li>
+  
+    <div class="container">
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item"><img class="image img--rounded img--small" src="/media/jpg/rauls_photo" alt="Raul Gulieyev"></li>
+                <li class="menu__item"><h1>Raul Guliyev</h1></li>
             </ul>
-        </section>
+            
+            <ul class="menu menu-hide-mobile">
+                <li class="menu__item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#experience">Experience</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#connect">Connect</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
+    <main class="container">
+        <div>
+            <section id="about">
+                <h1>About</h1>
+                <p>Hey! I'm Raul and I'm multi-disciplined software engineer with experience full-stack development and ERP development. Continuous process improver. Empathetic leader. Focused on crafting a web for everyone.
+                The web can sometimes be indistinguishable from magic, but I have the knowledge and patience required to make just about anything.</p>
+            </section>
+
+            <section id="experience">
+                <h1>Experience</h1>
+                <div class="experience__list">
+                    <div class="experience__item">
+                        <span>
+                            <strong>Software Development Engineer </strong>
+                            - FCHAIN CORPORATION CO.
+                            <span> 2022 - present</span>
+                        </span>
+                    </div>
+                    <div class="experience__item">
+                        <span>
+                            <strong>Development Engineer</strong>
+                            - PROSOL CJSC
+                            <span>May 2019 - June 2022</span>
+                        </span>
+                    </div>
+                    <div class="experience__item">    
+                        <span>
+                            <strong>ERP System Software development engineer</strong>
+                            - Media Invest LLC
+                            <span>Novomber 2016 - January 2019</span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+          
+            <section id="skills">
+                <h2>Skills</h2>
+                    <ul class="skills__list">
+
+                    </ul>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                  
+                </ul>
+            </section>  
+        
+            <section id="connect">
+                <h1>Connect</h1>
+                <ul class="connect__list">
+                    <li><a href="https://github.com/raul-2001/" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/raul-guliyev-3a3670110" target="_blank">Linkedin</a></li>
+                </ul>
+            </section>
+
+            <section id="leave_message">
+                <h2>Leave a Message</h2>
+                <form name="leave_message" method="post" autocomplete="on">
+                    <div class="container__leaveMessage">
+                        <div class="container_userName__email">
+                            <div class="field__item">
+                                <label class="field_label" for="userName" ">User name</label>
+                                <input class="field_input"  type="text" id="userName" name="userName" required="true" placeholder="First or Full Name" autocomplete="on">
+                            </div>
+                            <br>
+                            <div class="field__item">
+                                <label class="field_label" for="userEmail">User email</label>
+                                <input class="field_input" type="email" id="userEmail" name="userEmail" required="true" placeholder="name@example.com">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="container__text">
+                            <label class="field_label" for="userMessage">Message</label>
+                            <br>
+                            <textarea class="field_text" name="userMessage" required="true" id="userMessage"  cols="30" rows="10" placeholder="Leave a message"></textarea>
+                        </div>
+                        <br>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+
+            <!--message list section-->
+            <section id="messages" style="display: none;">
+                <h2>Messages</h2>
+                <ul class="list">
 
                 </ul>
-        </section>
-        <section id="connect">
-            <h1>Connect</h1>
-            <ul>
-                <li><a href="https://github.com/raul-2001/" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/raul-guliyev-3a3670110" target="_blank">Linkedin</a></li>
-            </ul>
-        </section>
-
-        <section id="leave_message">
-            <h2>Leave a Message</h2>
-            <form name="leave_message" method="post" autocomplete="on">
-                <div class="container__leaveMessage">
-                    <div class="container_userName__email">
-                        <div class="field__item">
-                            <label class="field_label" for="userName" ">User name</label>
-                            <input class="field_input"  type="text" id="userName" name="userName" required="true" placeholder="First or Full Name" autocomplete="on">
-                        </div>
-                        <br>
-                        <div class="field__item">
-                            <label class="field_label" for="userEmail">User email</label>
-                            <input class="field_input" type="email" id="userEmail" name="userEmail" required="true" placeholder="name@example.com">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="container__text">
-                        <label class="field_label" for="userMessage">Message</label>
-                        <br>
-                        <textarea class="field_text" name="userMessage" required="true" id="userMessage"  cols="30" rows="10" placeholder="Leave a message"></textarea>
-                    </div>
-                    <br>
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-        </section>
-
-        <!--message list section-->
-        <section id="messages" style="display: none;">
-            <h2>Messages</h2>
-            <ul class="list">
-
-            </ul>
-        </section>
+            </section>
+        </div>
     </main>
     <footer></footer>
     <script src="js/index.js"></script>
