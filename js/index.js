@@ -114,6 +114,7 @@ meessageFrom.addEventListener('submit', event =>{
     
 })
 
+/*
 // AJAX
 // XPMLHttpRequest that is callback-based API
 const githubRequest = new XMLHttpRequest;
@@ -144,4 +145,40 @@ githubRequest.addEventListener("load", e => {
         }
             }
 
+})
+*/
+
+
+// Fetch API
+const requestUrl = 'http://api.github.com/users/raul-2001/repos'
+fetch(requestUrl)
+.then((response) => {
+    const myData = response.json();
+    return new Promise((resolve, reject) => {
+        resolve(myData);
+    })
+})
+.then(myData => {
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < myData.length; i++) {
+        
+        const project = document.createElement("li");
+        const a = document.createElement("a");
+
+        // adding class and css styles
+        project.classList.add('item_role');
+        
+        if (myData[i].name !== "fenrir-intro") {
+
+            a.innerText = myData[i].name;
+            a.href = myData[i].clone_url;
+            a.target = "_blank"
+            project.appendChild(a);
+            projectList.appendChild(project);
+    
+            }
+        }
 })
