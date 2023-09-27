@@ -16,10 +16,12 @@ main {
     flex-grow: 1;
 }
 
+/*
 section {
     margin: 5px;
     padding: 5px;    
 }
+*/
 
 h1, h2 {
     font-size: 27px;
@@ -33,7 +35,7 @@ h1, h2 {
     margin: 0 auto;
     max-width: 1024px;
     width: 90vw;
-    
+
 }
 
 nav {
@@ -43,7 +45,7 @@ nav {
 }
 
 .nav a:hover {
-    background-color:rgb(240, 229, 229);
+    background-color:rgb(196, 233, 248);
 }
 
 ul {
@@ -80,6 +82,10 @@ ul {
     font-size: 1.125rem;
 }
 
+.menu__item__sec {
+    font-size: 1.25rem;
+}
+
 li {
     list-style: none;
 }
@@ -95,21 +101,35 @@ li {
 
 .experience__item {
     padding: 10px;
-    background-color: rgb(240, 229, 229);
+    background-color: rgb(196, 233, 248);
 }
 
 
 .skills__list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.skills__list li {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+.skills__list li:hover {
+    background-color: rgb(188, 250, 250);
 }
 
 .item_role {
     margin-right: 0.5rem;
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
-    padding: 0.25rem 0.75rem;
+    padding: 20px;
     margin-bottom: 0.5rem;
-    display: inline-block;
+    border-radius: 0.5rem;
 }
 
 label {
@@ -118,13 +138,13 @@ label {
 }
 
 input[type="text"]{
-    height: 1.5rem;
+    height: 40px;
     margin: 5px 0;
     display: block;
 }
 
 input[type="email"] {
-    height: 1.5rem;
+    height: 40px;
     margin: 5px 0;
     display: block;
 }
@@ -185,17 +205,20 @@ textarea::placeholder {
 .field_input {
     padding: 0.25rem 0.5rem;
     width: 200px;
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-primary);
 }
 
 .field_text {
     margin-top: 5px;
     width: auto;
-    
+    border-radius: 0.5rem;
 }
 
 footer {
-    background-color: rgb(241, 232, 232);
+    background-color: rgb(196, 233, 248);
     text-align: center;
+    
     
 }
 
@@ -219,11 +242,12 @@ footer {
         width: 400px;
     }
 
-
+    
     .field_text {
         margin-top: 5px;
         width: 845px;
     }
+    
 
     footer {
         padding: 5px;

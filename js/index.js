@@ -4,13 +4,18 @@ const thisYear = today.getFullYear();
 
 // adding some elements into the footer tag
 const footer = document.querySelector("footer");
-const copyright = document.createElement("p");
-copyright.textContent =  `© Raul Guliyev ${thisYear}`;
-footer.appendChild(copyright);
 
+const footer__list = footer.querySelector("ul");
+
+const copyright = document.createElement("li");
+//copyright.style.classList.add("menu__item")
+
+//const copyright = document.createElement("p");
+copyright.textContent =  `© Raul Guliyev ${thisYear}`;
+footer__list.appendChild(copyright);
 
 // Skills
-skills = ['javaScript', 'HTML', 'CSS', 'Python', 'SQL', 'GIT', 'Django', 'DRF', 'FastAPI', 'Docker'];
+skills = ['javaScript', 'HTML', 'CSS', 'Python', 'SQL', 'GIT', 'Django', 'Jinja', 'DRF', 'FastAPI', 'Docker'];
 const skillsSection = document.querySelector("#skills");
 const skillList = skillsSection.querySelector("ul");
 skillList.classList.add("skills__list");
@@ -162,6 +167,7 @@ fetch(requestUrl)
 
     const projectSection = document.getElementById("projects");
     const projectList = projectSection.querySelector("ul");
+    projectList.classList.add("skills__list")
 
     for (let i = 0; i < myData.length; i++) {
         
@@ -170,6 +176,7 @@ fetch(requestUrl)
 
         // adding class and css styles
         project.classList.add('item_role');
+        project.classList.add('item_role_pr')
         
         if (myData[i].name !== "fenrir-intro") {
 
